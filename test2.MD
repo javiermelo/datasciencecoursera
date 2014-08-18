@@ -1,6 +1,6 @@
 Welcome to StackEdit!	{#welcome}
 =====================
-
+hhhh
 
 Hello, I am your first Markdown document within **StackEdit**[^stackedit]. Don't delete me, I can be helpful. I can be recovered anyway in the `Utils` tab of the <i class="icon-cog"></i> `Settings` dialog.
 
@@ -123,7 +123,7 @@ Markdown Extra
 ### Tables
 
 **Markdown Extra** has a special syntax for tables:
-
+Where is extra?
 Variable  | Position | Description                    
 --------- | :--:  | -----
 **activity**   |      1  |Activity performed by the volunteer|
