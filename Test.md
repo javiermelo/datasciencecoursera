@@ -1,5 +1,8 @@
 ## This is a markdownfile
 
+<script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+
+
 Variable  | Position | Description                    
 --------- | :--:  | -----
 **activity**   |      1  |Activity performed by the volunteer|
