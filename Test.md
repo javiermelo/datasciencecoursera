@@ -1,8 +1,8 @@
-###Getting and Cleaning Data Project | Coursera
-###============================================
+##Getting and Cleaning Data Project | Coursera
+##============================================
 
 
-##Study Design
+###Study Design
 
 The purpose of this data collection and cleaning data project is to create a summarized data set based on the "Human Activity Recognition Using SmartPhones Dataset Version 1.0" (Anguita et al., 2012).  This dataset is available at:
 
@@ -29,7 +29,7 @@ The data set result was generated trough the creation of one R script called run
 > - Variables: 68
 > - Character variables quoted: yes
 
-## Codebook
+### Codebook
 
 
 Variable  | Position | Description                    
@@ -115,7 +115,7 @@ Variable  | Position | Description
 | | |**Note 2: Values of the variables are actually averages of the calculated features for each activity performed by each volunteer**
 
 
-##References
+###References
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
