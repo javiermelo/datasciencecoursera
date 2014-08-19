@@ -42,7 +42,7 @@ Variable  | Position | Description
 |              |         |SITTING
 |              |         |STANDING
 |              |         |LAYING
-**subjectId**  |      2 |Sequential identinfying the volunteer
+**subjectId**  |      2 |Sequential identifying the volunteer
 |              |         | Values:
 |              |         | (1<= subjectId <= 30)
 **tBodyAccMeanX**|      3 |Average of  time domain horizontal body acceleration
