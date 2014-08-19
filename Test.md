@@ -105,6 +105,8 @@ Variable  | Position | Description
 **fBodyGyroMagStd**|     66 |Standard deviation of frequency domain angular velocity vector magnitude
 **fBodyGyroJerkMagMean**|     67 |Average of frequency domain body angular jerk vector magnitude 
 **fBodyGyroJerkMagStd**|     68 |Standard deviation of  frequency domain body angular jerk vector magnitude 
-|**Note: Variables from 3 to 68 are normalized and bounded within [-1,1]**
+|:--------
+|**Note: Variables from postion 3 to 68 are normalized and bounded within [-1,1]**
+
 
 
