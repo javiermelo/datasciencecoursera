@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"\></script\>
+
 ## This is a markdownfile
 Welcome to StackEdit!	{#welcome}
 =====================
@@ -42,7 +42,7 @@ Variable  | Position | Description
 |              |         | (1<= subjectId <= 30)
 **tBodyAccMeanX**|      3 |Average of  time domain horizontal body acceleration
 |                |         | Units:
-|             |         | standard gravity unit [$g_0$]
+|             |         | standard gravity unit [g_0]
 **tBodyAccMeanY**|      4 |Average of  time domain vertical body acceleration
 |                |         | Units:
 |             |         |  standard gravity unit [$g_0$]
