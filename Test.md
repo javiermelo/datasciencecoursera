@@ -21,7 +21,7 @@ The data set result was generated trough the creation of one R script called run
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject 
 
 
-> **FORMAT:** 
+> **DATASET FORMAT:** 
 > - Record lenght: variable
 > - Separator: space **" "**
 > - Records: 180
