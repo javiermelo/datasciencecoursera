@@ -26,7 +26,6 @@ You can create a new document by clicking the <i class="icon-file"></i> button i
 
 #### <i class="icon-folder-open"></i> Switch to another document
 
-
 Variable  | Position | Description                    
 --------- | :--:  | -----
 **activity**   |      1  |Activity performed by the volunteer|
@@ -41,203 +40,70 @@ Variable  | Position | Description
 |              |         | Values:
 |              |         | (1<= subjectId <= 30)
 **tBodyAccMeanX**|      3 |Average of  time domain horizontal body acceleration
-|                |         | Units:
-|             |         | standard gravity unit [*g<sub>0</sub>*]
 **tBodyAccMeanY**|      4 |Average of  time domain vertical body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tBodyAccMeanZ**|      5 |Average of  time domain transverse body acceleration
-|                |         | Units:
-|             |         | standard gravity unit [*g<sub>0</sub>*]
 **tBodyAccStdX**|      6 |Standard deviation of  time domain horizontal body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tBodyAccStdY**|      7 |Standard deviation of  time domain vertical body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tBodyAccStdZ**|      8 |Standard deviation of  time domain transverse body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tGravityAccMeanX**|      9 |Average of  time domain horizontal gravity acceleration
-|                |         | Units:
-|             |         | standard gravity unit [*g<sub>0</sub>*]
 **tGravityAccMeanY**|      10 |Average of  time domain vertical gravity acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tGravityAccMeanZ**|      11 |Average of  time domain transverse gravity acceleration
-|                |         | Units:
-|             |         | standard gravity unit [*g<sub>0</sub>*]
 **tGravityAccStdX**|     12 |Standard deviation of  time domain horizontal gravity acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tGravityAccStdY**|     13 |Standard deviation of  time domain vertical gravity acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tGravityAccStdZ**|      14 |Standard deviation of  time domain transverse gravity acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **tBodyAccJerkMeanX**|  15 |Average of  time domain horizontal body jerk 
-|                |         | Units:
-|             |         |   [*g<sub>0</sub>/s*]
 **tBodyAccJerkMeanY**|  16 |Average of  time domain vertical body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **tBodyAccJerkMeanZ**|  17 |Average of  time domain transverse body jerk
-|                |         | Units:
-|             |         |   [*g<sub>0</sub>/s*]
 **tBodyAccJerkStdX**|     18 |Standard deviation of  time domain horizontal body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **tBodyAccJerkStdY**|     19 |Standard deviation of  time domain vertical body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **tBodyAccJerkStdZ**|     20 |Standard deviation of  time domain transverse body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **tBodyGyroMeanX**|     21 |Average of  time domain horizontal body angular velocity
-|                |         | Units:
-|             |         |   [*radian/s*]
 **tBodyGyroMeanY**|     22 |Average of  time domain vertical body acceleration
-|                |         | Units:
-|             |         |    [*radian/s*]
 **tBodyGyroMeanZ**|     23 |Average of  time domain transverse body acceleration
-|                |         | Units:
-|             |         | [*radian/s*]
 **tBodyGyroStdX**|     24 |Standard deviation of time domain horizontal body angular velocity
-|                |         | Units:
-|             |         |   [*radian/s*]
 **tBodyGyroStdY**|     25 |Standard deviation of  time domain vertical body angular velocity
-|                |         | Units:
-|             |         |    [*radian/s*]
 **tBodyGyroStdZ**|     26 |Standard deviation of  time domain transverse body angular velocity
-|                |         | Units:
-|             |         |  [*radian/s*]
 **tBodyGyroJerkMeanX**|     27 |Average of  time domain horizontal body angular jerk
-|                |         | Units:
-|             |         |   [*radian/s<sup>3</sup>*]
 **tBodyGyroJerkMeanY**|     28 |Average of  time domain vertical body angular jerk
-|                |         | Units:
-|             |         |    [*radian/s<sup>3</sup>*]
 **tBodyGyroJerkMeanZ**|     29 |Average of  time domain transverse body angular jerk
-|                |         | Units:
-|             |         | standard gravity  [*radian/s<sup>3</sup>*]
 **tBodyGyroJerkStdX**|     30 |Standard deviation of time domain horizontal body angular jerk
-|                |         | Units:
-|             |         |   [*radian/s<sup>3</sup>*]
 **tBodyGyroJerkStdY**|     31 |Standard deviation of  time domain vertical body angular jerk
-|                |         | Units:
-|             |         |    [*radian/s<sup>3</sup>*]
-**tBodyGyroJerkStdZ**|     32 |Standard deviation of  time domain transverse body angular jerk
-|                |         | Units:
-|             |         |  [*radian/s<sup>3</sup>*]
+**tBodyGyroJerkStdZ**|     32 |Standard deviation of  time domain 
 **tBodyAccMagMean**|     33 |Average of  time domain vector magnitude body acceleration 
-|                |         | Units:
-|             |         |  standard gravity unit  [*g<sub>0</sub>*]
 **tBodyAccMagStd**|     34 |Standard deviation of  time domain vector magnitude body acceleration 
-|                |         | Units:
-|             |         |   standard gravity unit  [*g<sub>0</sub>*]
 **tGravityAccMagMean**|     35 |Average of  time domain gravity acceleration vector magnitude 
-|                |         | Units:
-|             |         | standard gravity unit  [*g<sub>0</sub>*]
 **tGravityAccMagStd**|     36 |Standard deviation of time domain gravity acceleration vector magnitude
-|                |         | Units:
-|             |         |  standard gravity unit  [*g<sub>0</sub>*]
 **tBodyAccJerkMagMean**|     37 |Average of  time domain body acceleration jerk vector magnitude 
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **tBodyAccJerkMagStd**|     38 |Standard deviation of  time domain body acceleration jerk vector magnitude 
-|                |         | Units:
-|             |         |  [*g<sub>0</sub>/s*]
 **tBodyGyroMagMean**|     39 |Average of time domain angular velocity vector magnitude 
-|                |         | Units:
-|             |         |  [*radian/s*]
 **tBodyGyroMagStd**|     40 |Standard deviation of time domain angular velocity vector magnitude
-|                |         | Units:
-|             |         |   [*radian/s*]
 **tBodyGyroJerkMagMean**|     41 |Average of time domain body angular jerk vector magnitude 
-|                |         | Units:
-|             |         |    [*radian/s<sup>3</sup>*]
 **tBodyGyroJerkMagStd**|     42 |Standard deviation of  time domain body angular jerk vector magnitude 
-|                |         | Units:
-|             |         |  [*radian/s<sup>3</sup>*]
 **fBodyAccMeanX**|     43 |Average of  frequency domain horizontal body acceleration
-|                |         | Units:
-|             |         | standard gravity unit [*g<sub>0</sub>*]
 **fBodyAccMeanY**|     44 |Average of  frequency domain vertical body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **fBodyAccMeanZ**|     45 |Average of  frequency domain transverse body acceleration
-|                |         | Units:
-|             |         | standard gravity unit [*g<sub>0</sub>*]
 **fBodyAccStdX**|     46 |Standard deviation of  frequency domain horizontal body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **fBodyAccStdY**|     47 |Standard deviation of  frequency domain vertical body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **fBodyAccStdZ**|     48 |Standard deviation of  frequency domain transverse body acceleration
-|                |         | Units:
-|             |         |  standard gravity unit [*g<sub>0</sub>*]
 **fBodyAccJerkMeanX**|  49 |Average of  frequency domain horizontal body jerk 
-|                |         | Units:
-|             |         |   [*g<sub>0</sub>/s*]
 **fBodyAccJerkMeanY**|  50 |Average of  frequency domain vertical body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **fBodyAccJerkMeanZ**|  51 |Average of  frequency domain transverse body jerk
-|                |         | Units:
-|             |         |   [*g<sub>0</sub>/s*]
 **fBodyAccJerkStdX**|     52 |Standard deviation of  frequency domain horizontal body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **fBodyAccJerkStdY**|     53 |Standard deviation of  frequency domain vertical body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **fBodyAccJerkStdZ**|     54 |Standard deviation of  frequency domain transverse body jerk
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>/s*]
 **fBodyGyroMeanX**|     55 |Average of  frequency domain horizontal body angular velocity
-|                |         | Units:
-|             |         |   [*radian/s*]
 **fBodyGyroMeanY**|     56 |Average of  frequency domain vertical body acceleration
-|                |         | Units:
-|             |         |    [*radian/s*]
 **fBodyGyroMeanZ**|     57 |Average of  frequency domain transverse body acceleration
-|                |         | Units:
-|             |         | [*radian/s*]
 **fBodyGyroStdX**|     58 |Standard deviation of frequency domain horizontal body angular velocity
-|                |         | Units:
-|             |         |   [*radian/s*]
 **fBodyGyroStdY**|     59 |Standard deviation of  frequency domain vertical body angular velocity
-|                |         | Units:
-|             |         |    [*radian/s*]
 **fBodyGyroStdZ**|     60 |Standard deviation of  frequency domain transverse body angular velocity
-|                |         | Units:
-|             |         |  [*radian/s*]
 **fBodyAccMagMean**|    61 |Average of  frequency domain vector magnitude body acceleration 
-|                |         | Units:
-|             |         |  standard gravity unit  [*g<sub>0</sub>*]
 **fBodyAccMagStd**|     62 |Standard deviation of  frequency domain vector magnitude body acceleration 
-|                |         | Units:
-|             |         |   standard gravity unit  [*g<sub>0</sub>*]
 **fBodyAccJerkMagMean**|     63 |Average of  frequency domain body acceleration jerk vector magnitude 
-|                |         | Units:
-|             |         |    [*g<sub>0</sub>*]
 **fBodyAccJerkMagStd**|     64 |Standard deviation of  frequency domain body acceleration jerk vector magnitude 
-|                |         | Units:
-|             |         |  [*g<sub>0</sub>*]
 **fBodyGyroMagMean**|     65 |Average of frequency domain angular velocity vector magnitude 
-|                |         | Units:
-|             |         |  [*radian/s*]
 **fBodyGyroMagStd**|     66 |Standard deviation of frequency domain angular velocity vector magnitude
-|                |         | Units:
-|             |         |   [*radian/s*]
 **fBodyGyroJerkMagMean**|     67 |Average of frequency domain body angular jerk vector magnitude 
-|                |         | Units:
-|             |         |    [*radian/s<sup>3</sup>*]
 **fBodyGyroJerkMagStd**|     68 |Standard deviation of  frequency domain body angular jerk vector magnitude 
-|                |         | Units:
-|             |         |  [*radian/s<sup>3</sup>*]
-
 
 
