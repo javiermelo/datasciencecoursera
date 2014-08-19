@@ -3,7 +3,6 @@
 
 
 ##Study Design
-##------------
 
 The purpose of this data collection and cleaning data project is to create a summarized data set based on the "Human Activity Recognition Using SmartPhones Dataset Version 1.0" (Anguita et al., 2012).  This dataset is available at:
 
@@ -22,15 +21,15 @@ The data set result was generated trough the creation of one R script called run
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject 
 
 
-> **FORMAT:**> 
-> - Separator: space " ".
+> **FORMAT:** 
 > - Record lenght: variable
+> - Separator: space **" "**
 > - Records: 180
 > - Header: yes
 > - Variables: 68
-> - Character variables are quoted
+> - Character variables quoted: yes
 
-#### Codebook
+## Codebook
 
 
 Variable  | Position | Description                    
@@ -112,10 +111,12 @@ Variable  | Position | Description
 **fBodyGyroMagStd**|     66 |Standard deviation of frequency domain angular velocity vector magnitude
 **fBodyGyroJerkMagMean**|     67 |Average of frequency domain body angular jerk vector magnitude 
 **fBodyGyroJerkMagStd**|     68 |Standard deviation of  frequency domain body angular jerk vector magnitude 
-|**Note 1: Variables from postion 3 to 68 are normalized and bounded within [-1,1]**| |
-|**Note 2: Values of the variables are actually averages of the calculated features for each activity performed by each volunteer
+| | |**Note 1: Variables from postion 3 to 68 are normalized and bounded within [-1,1]**| |
+| | |**Note 2: Values of the variables are actually averages of the calculated features for each activity performed by each volunteer**
 
 
+##References
 
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
