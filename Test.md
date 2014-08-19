@@ -42,7 +42,7 @@ Variable  | Position | Description
 |              |         | (1<= subjectId <= 30)
 **tBodyAccMeanX**|      3 |Average of  time domain horizontal body acceleration
 |                |         | Units:
-|             |         | standard gravity unit [g_text<sub>superscript</sub>0]
+|             |         | standard gravity unit [g<sub>0</sub>]
 **tBodyAccMeanY**|      4 |Average of  time domain vertical body acceleration
 |                |         | Units:
 |             |         |  standard gravity unit [$g_0$]
