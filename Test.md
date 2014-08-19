@@ -1,7 +1,31 @@
-## This is a markdownfile
-
-
 <script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"\></script\>
+## This is a markdownfile
+Welcome to StackEdit!	{#welcome}
+=====================
+
+
+Hello, I am your first Markdown document within **StackEdit**[^stackedit]. Don't delete me, I can be helpful. I can be recovered anyway in the `Utils` tab of the <i class="icon-cog"></i> `Settings` dialog.
+
+----------
+
+
+Documents
+---------
+
+**StackEdit** stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
+
+> **NOTE:**
+> 
+> - StackEdit is accessible offline after the application has been loaded for the first time.
+> - Your local documents are not shared between different browsers or computers.
+> - Clearing your browser's data may **delete all your local documents!** Make sure your documents are backed up using **Google Drive** or **Dropbox** synchronization (see [<i class="icon-share"></i> Synchronization](#synchronization) section).
+
+#### <i class="icon-file"></i> Create a document
+
+You can create a new document by clicking the <i class="icon-file"></i> button in the navigation bar. It will switch from the current document to the new one.
+
+#### <i class="icon-folder-open"></i> Switch to another document
+
 
 Variable  | Position | Description                    
 --------- | :--:  | -----
