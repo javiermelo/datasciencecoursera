@@ -82,7 +82,7 @@ It will be listed below the 5 major steps as specified in the project instructio
   2. change the the column name in action labels data.table.
       ```
 
-   setnames(ActLabels,  names(ActLabels),  c("activityId", "activity"))
+      setnames(ActLabels,  names(ActLabels),  c("activityId", "activity"))
       ```
   3. build the factors and replace the activity column values from acitvityId to activities with descriptive names:
       ```
