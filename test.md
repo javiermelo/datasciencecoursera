@@ -105,16 +105,19 @@ It will be listed below the 5 major steps as specified in the project instructio
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject 
    1. Using functionality of reshape2 package, we melt the data frame  into a narrow dataset without any summary across the variables by activity and subjectId.  I am following here the order given in the instructions "for each activity and each subject".  Note also that as.is is used to keep the data types unmodified.
       ```
+      
       library(reshape2)
       Xtt <- melt(Xtt,id=c("activity", "subjectId"),
                 measure.vars=variables[1:66], as.is=TRUE)
       ```
   2. The tidy data set is created by casting Xtt across the variables and summarizing with the mean by activity and subjectId
       ```
+      
       XttWide <- dcast(Xtt,activity+subjectId~variable, mean)
       ```
   3.  Creates the file with default field separator 
       ```
+      
       write.table(XttWide,"./data/Xttwide.txt",row.names=FALSE)
       ```
  
