@@ -74,7 +74,7 @@ It will be listed below the 5 major steps as specified in the project instructio
       Xtt <- Xtt[ , colsel]
       ```
 3.  Uses descriptive activity names to name the activities in the data set.
-  1. lowerUpperCamel naming convention is followed for the name of all columns in the data set from now on.  This is because names of the variables are too long and lowerUpperCamel will make them easier to read. We modify the Labels by removing punctuation and spaces
+  1. lowerUpperCamel naming convention is followed for the name of all columns in the data set from now on.  This is because names of the variables are too long and lowerUpperCamel will make them easier to read. Activity Labels are modified by removing punctuation and spaces
       ```
 
       ActLabels$V2 <- gsub("[[:punct:]]", " ", ActLabels$V2)
@@ -110,7 +110,7 @@ It will be listed below the 5 major steps as specified in the project instructio
       setnames(Xtt, variables)
      ```
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject 
-   1. Using functionality of reshape2 package, we melt the data frame  into a narrow dataset without any summary across the variables by activity and subjectId.  I am following here the order given in the instructions "for each activity and each subject".  Note also that as.is is used to keep the data types unmodified.
+   1. Using functionality of reshape2 package, we melt the data frame  into a narrow dataset without any summary across the variables by activity and subjectId.  It was followed here the order given in the instructions "for each activity and each subject".  Note also that as.is is used to keep the data types unmodified.
       ```
 
       library(reshape2)
