@@ -22,7 +22,7 @@ run_analysis.R : R script that creates a tidy dataset  with the average of selec
 
 CodeBook.md : describes in detail the structure of the dataset file
 
-XttWide.txt : tydy dataset
+XttWide.txt : tydy dataset with the average of calculated features that used mean and std functions and arranged by activity and subject.
 
 README.md:  This file with instructions, explanation of process and analysis files.
 
@@ -36,7 +36,7 @@ README.md:  This file with instructions, explanation of process and analysis fil
 ```
 3.  Wait some seconds until the prompt appears again indicating that the script finished.
 
-4.  XttWide.txt can be found as "./data/XttWide.txt"
+4.  XttWide.txt can be found from your working directory as "./data/XttWide.txt"
 
 ###How to read the file
 
