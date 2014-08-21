@@ -51,7 +51,7 @@ It will be listed below the 5 major steps as specified in the project instructio
 
 1.  Merges the training and the test sets to create one data set
   1.  Initialize file handlers, and verify the existence of the files.  Script stops with message if a file does not exist.
-  2.Read the files and creates the corresponding data.table for each file
+  2.  Read the files and creates the corresponding data.table for each file
   3. Xtrain.txt has all the variables for each subject and activity,but they are not included in the file as columns. The subject is found in subject_train.txt and the activiy id in ytrain.txt. The relation among the files is the order of the records. The idea is to add the subjectID and activityId as columns to the Xtrain dataset.  
       ```
       ## add column "subjectId" into  Xtrain from SubjectTrain
