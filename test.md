@@ -47,6 +47,12 @@ Use in R:
 
 ###run_analysis.R Explained
 
+It will be listed below the 5 major steps as specified in the project instructions. Then under each step, the sequence of explanations about the R code will be included
+
+1. Item 1
+  1. A corollary to the above item.
+  2. Yet another point to consider.
+
 1.  Merges the training and the test sets to create one data set
   a.  Initialize file handlers, and verify the existence of the files.  Script stops with message if a file does not exist.
   b.Read the files and creates the corresponding data.table for each file
