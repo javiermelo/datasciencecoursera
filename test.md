@@ -40,9 +40,9 @@ README.md:  This file with instructions, explanation of process and analysis fil
 
 ###How to read the file
 
-Use in R:
+Use in R: 
    ```
-   > mytidy <- read.table("./data/XttWide.txt",         header=TRUE,s.is=TRUE)
+   > mytidy <- read.table("./data/XttWide.txt", header=TRUE, as.is=TRUE)
    ```
 
 ###run_analysis.R Explained
@@ -62,11 +62,11 @@ It will be listed below the 5 major steps as specified in the project instructio
 
       Xtest$subjectId <- SubjectTest$V1
       ```
-  4. The same is done to test data because it has the same structure.
+  4. The same is done to Xtest.txt data because it has the same structure.
   5.  Combine both data.tables with rbind because they have the same number and type of columns into the Xtt data.table.
-2.Extracts only the measurements on the mean and standard deviation for each measurement.
+2.  Extracts only the measurements on the mean and standard deviation for each measurement.
   1. Only variables containing "-mean()", or  "-std()" will be extracted, so the objective is to build a regular expression 
-`[-mean()|-std()]` and extracts the columns numbers from features. Also you need to keep the columns added in 1 (562:563)
+`[-mean()|-std()]` and extract the columns numbers from features. Also you need to keep the columns added in 1 (562:563)
       ```
 
       toMatch <- c("-mean\\(\\)", "-std\\(\\)")
