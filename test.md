@@ -84,11 +84,11 @@ It will be listed below the 5 major steps as specified in the project instructio
 
       setnames(ActLabels,  names(ActLabels),  c("activityId", "activity"))
       ```
-  3. build the factors and replace the activity column values from acitvityId to activities with descriptive names:
+   3. build the factors and replace the activity column values from acitvityId to activities with descriptive names:
       ```
 
-   activityF <- factor(Xtt$activityId, labels=ActLabels$activity)
-   Xtt$activityId <- activityF
+      activityF <- factor(Xtt$activityId, labels=ActLabels$activity)
+      Xtt$activityId <- activityF
       ```
 4. Appropriately labels the data set with descriptive variable names.
   1. Build the variables vector with the names 
