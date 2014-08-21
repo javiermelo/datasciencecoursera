@@ -31,9 +31,9 @@ README.md:  This file with instructions, explanation of process and analysis fil
 1.  Download the compressed dataset from the link metioned above and unzip the file in the "./data" directory under your working directory. The structure of directories must be kept to allow the script to find  the files. If files are not found, error messages are displayed.
 
 2.  Run in R under your working directory: 
-```
+   ```
 	> source("run_analysis.R")
-```
+   ```
 3.  Wait some seconds until the prompt appears again indicating that the script finished.
 
 4.  XttWide.txt can be found from your working directory as "./data/XttWide.txt"
