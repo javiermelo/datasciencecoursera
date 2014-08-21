@@ -42,16 +42,12 @@ README.md:  This file with instructions, explanation of process and analysis fil
 
 Use in R:
 ```
-> mytidy <- read.table("./data/XttWide.txt", header=TRUE,                         	                   as.is=TRUE)
+> mytidy <- read.table("./data/XttWide.txt", header=TRUE,s.is=TRUE)
 ```
 
 ###run_analysis.R Explained
 
-It will be listed below the 5 major steps as specified in the project instructions. Then under each step, the sequence of explanations about the R code will be included
-
-1. Item 1
-  1. A corollary to the above item.
-  2. Yet another point to consider.
+It will be listed below the 5 major steps as specified in the project instructions. Then under each step, the sequence of explanations about the R code will be included.
 
 1.  Merges the training and the test sets to create one data set
   1.  Initialize file handlers, and verify the existence of the files.  Script stops with message if a file does not exist.
@@ -66,55 +62,54 @@ Xtrain$subjectId <- SubjectTrain$V1
 
 Xtest$subjectId <- SubjectTest$V1
 ```
-The same is done to test data because it has the same structure.
-  d.  Combine both data.tables with rbind because they have the same number and type of columns into the Xtt data.table.
+  4. The same is done to test data because it has the same structure.
+  5.  Combine both data.tables with rbind because they have the same number and type of columns into the Xtt data.table.
 2.Extracts only the measurements on the mean and standard deviation for each measurement.
-  a. Only variables containing "-mean()", or  "-std()" will be extracted, so the objective is to build a regular expression 
-`[-mean()|-std()]` and extract the columns numbers from features. Also you need to keep the column added in 1 (562:563)
+  1. Only variables containing "-mean()", or  "-std()" will be extracted, so the objective is to build a regular expression 
+`[-mean()|-std()]` and extracts the columns numbers from features. Also you need to keep the columns added in 1 (562:563)
 ```
 toMatch <- c("-mean\\(\\)", "-std\\(\\)")
-colsel <- union(grep(paste(toMatch,collapse="|"),Features$V2, value=FALSE),
-                (562:563))
+colsel <- union(grep(paste(toMatch,collapse="|"),Features$V2, value=FALSE),(562:563))
 Xtt <- Xtt[ , colsel]
 ```
 3.  Uses descriptive activity names to name the activities in the data set.
-  a. lowerUpperCamel naming convention is followed for the name of all columns in the data set from now on.  This is because names of the variables are too long and lowerUpperCamel will make them easier to read. We modify the Labels by removing punctuation and spaces
+  1. lowerUpperCamel naming convention is followed for the name of all columns in the data set from now on.  This is because names of the variables are too long and lowerUpperCamel will make them easier to read. We modify the Labels by removing punctuation and spaces
 ```
 ActLabels$V2 <- gsub("[[:punct:]]", " ", ActLabels$V2)
 ```
-  b. change the the column name in action labels data.table.
+  2. change the the column name in action labels data.table.
 ```
 setnames(ActLabels,  names(ActLabels),  c("activityId", "activity"))
 ```
-  c. build the factors and replace the activity column values from acitvityId to activities with descriptive names:
+  3. build the factors and replace the activity column values from acitvityId to activities with descriptive names:
 ```
 activityF <- factor(Xtt$activityId, labels=ActLabels$activity)
 Xtt$activityId <- activityF
 ```
 4. Appropriately labels the data set with descriptive variable names.
-  a. Build the variables vector with the names 
+  1. Build the variables vector with the names 
 ```
 variables <- union(grep(paste(toMatch,collapse="|"),Features$V2, value=TRUE),
                    c("subjectId", "activity"))
 ```
-   b.  remove dashes and parentheses 
+  2.  remove dashes and parentheses 
 ```
 variables <- gsub("[[:punct:]]", "", variables)
 ```
-  c. substitute "mean" and "std" to comply with lowerUpperCamel notation and assign the names to the Xtt data.table
+  3. substitute "mean" and "std" to comply with lowerUpperCamel notation and assign the names to the Xtt data.table
 ```
 variables <- gsub("mean","Mean", variables)
 variables <- gsub("std","Std", variables)
 setnames(Xtt, variables)
 ```
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject 
-   a. Using functionality of reshape2 package, we melt the data frame  into a narrow dataset without any summary across the variables by activity and subjectId.  I am following here the order given in the instructions "for each activity and each subject".  Note also that as.is is used to keep the data types unmodified.
+   1. Using functionality of reshape2 package, we melt the data frame  into a narrow dataset without any summary across the variables by activity and subjectId.  I am following here the order given in the instructions "for each activity and each subject".  Note also that as.is is used to keep the data types unmodified.
 ```
 library(reshape2)
 Xtt <- melt(Xtt,id=c("activity", "subjectId"),
                 measure.vars=variables[1:66], as.is=TRUE)
 ```
-  b. The tidy data set is created by casting Xtt across the variables and summarizing with the mean by activity and subjectId
+  2. The tidy data set is created by casting Xtt across the variables and summarizing with the mean by activity and subjectId
 ```
 XttWide <- dcast(Xtt,activity+subjectId~variable, mean)
 ```
